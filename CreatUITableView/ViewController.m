@@ -8,20 +8,45 @@
 
 #import "ViewController.h"
 
-@interface ViewController ()
+@interface ViewController () <UITableViewDelegate, UITableViewDataSource>
+@property (weak, nonatomic) IBOutlet UITableView *tableView;
 
 @end
 
 @implementation ViewController
+{
+    NSArray *Model;
+    NSArray *Measure;
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    self.title = @"Beautiful Girl";
+    Model = @[@"Ngoc Trinh", @"Rebecca", @"Taylor"];
+    Measure = @[@"85-60-90", @"75-58-85", @"80-63-85"];
+    [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"Cell"];
+    
+    
+}
+- (NSInteger) tableView: (UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
+    return 3;
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell" forIndexPath:indexPath];
+    
+    cell = [cell initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:@"Cell"];
+    
+    
+    cell.textLabel.text = [NSString stringWithFormat:@"%@", Model[indexPath.row]];
+    cell.textLabel.textColor = [UIColor redColor];
+    cell.imageView.image = [UIImage imageNamed: Model[indexPath.row]];
+    cell.detailTextLabel.text = Measure[indexPath.row];
+    cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
+    return cell;
 
+}
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+    return 90;
+}
 @end

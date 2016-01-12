@@ -13,6 +13,9 @@
 		D7A006941C3A5466000F8A72 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D7A006921C3A5466000F8A72 /* Main.storyboard */; };
 		D7A006961C3A5466000F8A72 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D7A006951C3A5466000F8A72 /* Assets.xcassets */; };
 		D7A006991C3A5466000F8A72 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D7A006971C3A5466000F8A72 /* LaunchScreen.storyboard */; };
+		D7A006AA1C3A5B94000F8A72 /* Rebecca.png in Resources */ = {isa = PBXBuildFile; fileRef = D7A006A71C3A5B94000F8A72 /* Rebecca.png */; };
+		D7A006AB1C3A5B94000F8A72 /* Taylor.png in Resources */ = {isa = PBXBuildFile; fileRef = D7A006A81C3A5B94000F8A72 /* Taylor.png */; };
+		D7A006AD1C3A659D000F8A72 /* Ngoc Trinh.png in Resources */ = {isa = PBXBuildFile; fileRef = D7A006AC1C3A659D000F8A72 /* Ngoc Trinh.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,9 @@
 		D7A006951C3A5466000F8A72 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D7A006981C3A5466000F8A72 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D7A0069A1C3A5466000F8A72 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D7A006A71C3A5B94000F8A72 /* Rebecca.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Rebecca.png; sourceTree = "<group>"; };
+		D7A006A81C3A5B94000F8A72 /* Taylor.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Taylor.png; sourceTree = "<group>"; };
+		D7A006AC1C3A659D000F8A72 /* Ngoc Trinh.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Ngoc Trinh.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +68,9 @@
 				D7A0068D1C3A5466000F8A72 /* AppDelegate.m */,
 				D7A0068F1C3A5466000F8A72 /* ViewController.h */,
 				D7A006901C3A5466000F8A72 /* ViewController.m */,
+				D7A006AC1C3A659D000F8A72 /* Ngoc Trinh.png */,
+				D7A006A71C3A5B94000F8A72 /* Rebecca.png */,
+				D7A006A81C3A5B94000F8A72 /* Taylor.png */,
 				D7A006921C3A5466000F8A72 /* Main.storyboard */,
 				D7A006951C3A5466000F8A72 /* Assets.xcassets */,
 				D7A006971C3A5466000F8A72 /* LaunchScreen.storyboard */,
@@ -138,8 +147,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				D7A006991C3A5466000F8A72 /* LaunchScreen.storyboard in Resources */,
+				D7A006AB1C3A5B94000F8A72 /* Taylor.png in Resources */,
 				D7A006961C3A5466000F8A72 /* Assets.xcassets in Resources */,
+				D7A006AD1C3A659D000F8A72 /* Ngoc Trinh.png in Resources */,
 				D7A006941C3A5466000F8A72 /* Main.storyboard in Resources */,
+				D7A006AA1C3A5B94000F8A72 /* Rebecca.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
